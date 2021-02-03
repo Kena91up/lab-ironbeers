@@ -1,8 +1,5 @@
 <ul>
-      {{#each beersFromApi}}
-        <li><img src="{{image_url}}" alt="{{name}}"></li>
-        <li>{{name}}</li>
-        <li>{{description}}</li>
-        <li>{{tagline}}</li>
+      {{#each beers}}
+        {{> beercontent}}
         {{/each}}
 </ul> 
